@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -63,13 +62,14 @@
             z-index: 1000;
         }
 
+
         .hamburger {
             font-size: 30px;
             background: none;
             border: none;
             cursor: pointer;
             z-index: 1100;
-            color : white;
+            color: white;
         }
 
         .slide-menu {
@@ -143,22 +143,18 @@
                         color: #5aa34f;
                     }
 
-        /* PC 가로 메뉴 텍스트 색상 */
-        /*.navbar-brand,
+        PC 가로 메뉴 텍스트 색상
+        .navbar-brand,
         .navbar-nav .nav-link {
             color: white !important;
         }
 
         .navbar-brand {
             color: white !important;
-        }*/
+        }
 
-        @media (min-width: 992px) {
-            header {
-                display: none;
-            }
-        
 
+       
     </style>
 
 </head>
@@ -167,10 +163,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-block" id="mainNav">
         <div class="container px-4 px-lg-5">
+            <a href="index.html">
+                <img src="assets/img/dogandcat_white.png" alt="WithPet 로고" style="height: 50px;" />
+            </a>
             <a class="navbar-brand" href="index.html">WithPet</a>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav ms-3 d-flex flex-row gap-4">
-                    <!--<li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="dog.html">강아지</a>
                     </li>
                     <li class="nav-item">
@@ -178,9 +177,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="24시동물병원.html">24시 동물병원</a>
-                    </li>-->
+                    </li>
                     <li class="nav-item">
-                         <!--✅ PC에서도 항상 보이는 햄버거 아이콘 -->
+                        <!--✅ PC에서도 항상 보이는 햄버거 아이콘-->
                         <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" style="background: none; border: none;">
                             <i class="fas fa-bars"></i>
                         </button>
@@ -190,18 +189,17 @@
         </div>
     </nav>
 
-  
 
-    <header>
+
+    <!--<header>
         <div class="logo">
             <a href="index.html">
                 <img src="assets/img/WithPet_logo.png" alt="WithPet 로고" style="height: 120px;" />
             </a>
-        </div>
-        <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
-    </header>
-
-    <div class="slide-menu" id="slideMenu">
+        </div>-->
+    <!--<button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>-->
+    <!--</header>-->
+    <!--<div class="slide-menu" id="slideMenu">
         <button class="close-btn" onclick="toggleMenu()">✕</button>
         <ul class="menu-list">
             <li>
@@ -222,7 +220,7 @@
             <li><a href="cat.html">고양이</a></li>
             <li><a href="vet.html">24시 동물병원</a></li>
         </ul>
-    </div>
+    </div>-->
 
 
     <section id="hero">
@@ -285,7 +283,7 @@
     <script>
         function toggleMenu() {
             const nav = document.getElementById('mainNav');
-            nav.classList.toggle('show');
+            /*nav.classList.toggle('show');*/
             const menu = document.getElementById('slideMenu');
             const hamburger = document.getElementById('hamburgerBtn');
             const isOpen = menu.classList.toggle('open');
@@ -302,7 +300,3 @@
     </script>
 </body>
 </html>
-
-
-
-
