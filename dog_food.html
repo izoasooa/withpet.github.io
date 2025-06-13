@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강아지 음식</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 30px;
+            background-color: #ffffff;
+            font-size: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+            .top-bar a {
+                color: darkgreen;
+                text-decoration: none;
+                font-weight: 300;
+
+            }
+            .top-bar a:hover {
+                font-weight: 500;
+            }
+        
+        .submenu {
+            display: flex;
+            justify-content: center; /* ✅ 가운데 정렬 */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            gap : 30px;
+        }
+
+        .submenu a {
+            color: darkgreen;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 20px;
+            margin: 0 15px;
+            padding: 4px 8px;
+            transition: color 0.2s ease-in-out;
+        }
+
+            .submenu a:hover {
+                color: #2e7d32;
+                font-weight: 500;
+            }
+
+            .submenu a.active {
+                border-bottom: 2px solid #66bb6a;
+                font-weight: 500;
+            }
+
+
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+
+        .menu-section {
+            margin: 50px auto 20px;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .menu-card {
+            background-color: #f5f5f5;
+            color: darkgreen;
+            font-family: 'Arial', sans-serif;
+            border-radius: 16px;
+            padding: 10px 10px;
+            font-weight: 500;
+            font-size: 17px;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+            .menu-card:hover {
+                background-color: #d9f0d9;
+                color: #2d6a4f;
+            }
+
+            .menu-card.active {
+                background-color: #b7e4c7;
+                color: #1b4332;
+            }
+
+        .content-container {
+            max-width: 1000px;
+            margin: 30px auto 60px;
+            padding: 0 20px;
+        }
+
+        .info-card {
+            display: flex;
+            gap: 25px;
+            background-color: #f5f5f5;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+            .info-card img {
+                width: 400px;
+                height: auto;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+
+        .info-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 수직 가운데 정렬 */
+           
+        }
+
+
+            .info-text h3 {
+                font-size: 25px;
+                margin-bottom: 15px;
+                font-weight: 700;
+                color: #2b4d2e;
+            }
+
+            .info-text ul {
+                color : gray;
+                padding-left: 20px;
+                margin: 0;
+            }
+
+            .info-text li {
+                margin-bottom: 6px;
+
+            }
+            .info-text p {
+                color : gray;
+            }
+
+        .highlight {
+            font-weight: bold;
+            color: #4e944f;
+        }
+
+        .post-meta {
+            font-size: 15px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .info-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+                .info-card img {
+                    width: 80%;
+                }
+
+            .info-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="index.html">
+                <img src="assets/img/dogandcat_green.png" alt="WithPet 로고" style="height: 50px;" />
+            </a>
+            <a href="index.html" style="font-size: 1.5rem; color: darkgreen; text-decoration: none; font-weight: 600;">WithPet</a>
+        </div>
+        <div>
+            <a href="dog.html" style="margin-left: 20px;">강아지</a>
+            <a href="cat.html" style="margin-left: 20px;">고양이</a>
+            <a href="vet.html" style="margin-left: 20px;">24시 동물병원</a>
+        </div>
+    </div>
+
+
+
+    <div class="submenu">
+    <a href="dog_food.html" class="active">지식정보</a>
+    <a href="dog_aid.html">응급처치</a>
+    <a href="dog_behavior.html">행동패턴</a>
+</div>
+
+
+    <hr />
+    <div class="menu-section">
+        <a href="dog_food.html" class="menu-card active">
+            <i class="fas fa-drumstick-bite"></i><br>음식
+        </a>
+        <a href="dog_health.html" class="menu-card">
+            <i class="fas fa-heartbeat"></i><br>건강
+        </a>
+        <a href="dog_vaccine.html" class="menu-card">
+            <i class="fas fa-syringe"></i><br>예방접종
+        </a>
+    </div>
+
+    <div class="content-container">
+        <div class="info-card">
+            <img src="assets/img/dog_toxicfood.jpg" alt="위험한 음식">
+            <div class="info-text">
+                <h3><i class="fas fa-ban"></i> 강아지가 먹으면 위험한 음식</h3>
+                <ul>
+                    <li><span class="highlight">초콜릿</span> – 테오브로민 중독 유발</li>
+                    <li><span class="highlight">조리된 뼈</span> – 장기 손상 위험</li>
+                    <li><span class="highlight">포도/건포도</span> – 신장 손상</li>
+                    <li><span class="highlight">아보카도</span> – 퍼신 독성 포함</li>
+                    <li><span class="highlight">양념 음식</span> – 위장 장애</li>
+                </ul>
+                <p class="post-meta">Posted by WithPet on June 4, 2025</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="assets/img/dog_humanfood.jpg" alt="사람 음식 대처법">
+            <div class="info-text">
+                <h3><i class="fas fa-exclamation-circle"></i> 사람 음식을 먹었을 때 대처법</h3>
+                <p>
+                    강아지가 사람 음식을 먹었을 경우, <span class="highlight">섭취량과 종류</span>를 확인하고,
+                    증상이 나타나면 <span class="highlight">즉시 수의사에게 상담</span>하세요. 소량 섭취했더라도 반복되면
+                    습관화되어 건강을 해칠 수 있습니다.
+                </p>
+                <p class="post-meta">Posted by WithPet on May 18, 2025</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="assets/img/dog_goodfood.jpeg" alt="보양식 추천">
+            <div class="info-text">
+                <h3><i class="fas fa-seedling"></i> 강아지 보양식 추천</h3>
+                <ul>
+                    <li><span class="highlight">닭고기</span> – 소화 잘 되는 단백질</li>
+                    <li><span class="highlight">미역</span> – 철분과 식이섬유</li>
+                    <li><span class="highlight">단호박</span> – 항산화 성분</li>
+                    <li><span class="highlight">전복</span> – 면역력 향상</li>
+                </ul>
+                <p class="post-meta">Posted by WithPet on May 2, 2025</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

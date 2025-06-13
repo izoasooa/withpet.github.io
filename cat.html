@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>고양이</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 30px;
+            background-color: #ffffff;
+            font-size: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+            .top-bar a {
+                color: darkgreen;
+                text-decoration: none;
+                font-weight: 300;
+            }
+            .top-bar a:hover {
+                font-weight: 500;
+            }
+
+        .submenu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+            .submenu a {
+                color: darkgreen;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 20px;
+                margin: 0 15px;
+                padding: 4px 8px;
+                transition: color 0.2s ease-in-out;
+            }
+
+                .submenu a:hover {
+                    color: #2e7d32;
+                    font-weight: 500;
+                }
+
+                .submenu a.active {
+                    border-bottom: 2px solid #66bb6a;
+                    font-weight: 500;
+                }
+
+        .menu-section {
+            margin: 50px auto 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .banner {
+            background-color: #e8f5e9;
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: #2e7d32;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="index.html">
+                <img src="assets/img/dogandcat_green.png" alt="WithPet 로고" style="height: 50px;" />
+            </a>
+            <a class="navbar-brand" href="index.html" style="color: darkgreen; text-decoration: none; font-weight: 600;">WithPet</a>
+        </div>
+        <div>
+            <a href="dog.html" style="margin-left: 20px;">강아지</a>
+            <a href="cat.html" style="margin-left: 20px;">고양이</a>
+            <a href="vet.html" style="margin-left: 20px;">24시 동물병원</a>
+        </div>
+    </div>
+
+    <div class="submenu">
+        <a href="cat_info.html">지식정보</a>
+        <a href="cat_aid.html">응급처치</a>
+        <a href="cat_behavior.html">행동패턴</a>
+    </div>
+
+    <header class="banner">
+        <h1>고양이에 대한 모든 것</h1>
+        <p>고양이에 대해 궁금한 점, 여기서 해결하세요</p>
+    </header>
+</body>
+</html>

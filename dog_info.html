@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강아지</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 30px;
+            background-color: #ffffff;
+            font-size: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+            .top-bar a {
+                color: darkgreen;
+                text-decoration: none;
+                font-weight: 300;
+                transition: font-weight 0.3s;
+            }
+
+                .top-bar a:hover {
+                    font-weight: 500;
+                    color: darkgreen;
+                }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+
+            .logo img {
+                height: 120px;
+                width: auto;
+            }
+
+
+        .main-menu {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            font-weight: 300;
+        }
+
+            .main-menu ul {
+                display: inline-flex;
+                list-style: none;
+                gap: 60px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .main-menu a {
+                color: #000;
+                text-decoration: none;
+                font-weight: 300;
+                padding-bottom: 4px;
+                border-bottom: 2px solid transparent;
+                transition: 0.3s;
+                font-size: 20px;
+            }
+
+                .main-menu a:hover,
+                .main-menu a.active {
+                    border-bottom: 2px solid #66bb6a;
+                    font-weight: 500;
+                    color: darkgreen;
+                }
+        .menu-section {
+            margin: 50px auto 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .menu-card {
+            background-color: #f5f5f5;
+            color: darkgreen;
+            font-family: 'Arial', sans-serif;
+            border-radius: 16px;
+            padding: 10px 10px;
+            font-weight: 500;
+            font-size: 17px;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+            .menu-card:hover {
+                background-color: #d9f0d9;
+                color: #2d6a4f;
+            }
+
+            .menu-card.active {
+                background-color: #b7e4c7;
+                color: #1b4332;
+            }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="assets/img/dogandcat_green.png" alt="WithPet 로고" style="height: 50px;" />
+            <span style="font-size: 1.5rem; font-weight: bold; color: darkgreen;">WithPet</span>
+        </a>
+        <a href="dog.html">강아지</a>
+        <a href="cat.html">고양이</a>
+        <a href="vet.html">24시 동물병원</a>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="dog_info.html"  class="active">지식정보</a></li>
+            <li><a href="dog_aid.html">응급처치</a></li>
+            <li><a href="dog_behavior.html">행동패턴</a></li>
+        </ul>
+    </nav>
+    <hr />
+    <div class="menu-section">
+        <a href="dog_food.html" class="menu-card">
+            <i class="fas fa-drumstick-bite"></i><br>음식
+        </a>
+        <a href="dog_health.html" class="menu-card">
+            <i class="fas fa-heartbeat"></i><br>건강
+        </a>
+        <a href="dog_vaccine.html" class="menu-card">
+            <i class="fas fa-syringe"></i><br>예방접종
+        </a>
+    </div>
+
+</body>
+</html>
