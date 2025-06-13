@@ -8,15 +8,13 @@ function toggleContent(box) {
 }
 
 const videos = [
-  "https://www.youtube.com/embed/92EByzD_Dt4",
-  "https://www.youtube.com/embed/R7gB825qZzM",
-  "https://www.youtube.com/embed/kJOQuXUhsdw",
-  "https://www.youtube.com/embed/emsYg5ZVOR0",
-  "https://www.youtube.com/embed/on8dJGMPMM0",
-  "https://www.youtube.com/embed/4f1QGu_7utw",
-  "https://www.youtube.com/embed/O0PjNgvgGGc",
-  "https://www.youtube.com/embed/o9kmmzaXGjc",
-  "https://www.youtube.com/embed/zB7WV3fjaYA"
+  "https://www.youtube.com/embed/xaajtx7YObI",
+  "https://www.youtube.com/embed/zw4rUvs3FLs",
+  "https://www.youtube.com/embed/RyaQFX1Pe0c",
+  "https://www.youtube.com/embed/B2u4BirFwQg",
+  "https://www.youtube.com/embed/TAVmeVbGMV4",
+  "https://www.youtube.com/embed/nZDeO7Xgs1o",
+  "https://www.youtube.com/embed/Sga_gd2P6Tc"
 ];
 
 let currentPage = 0;
@@ -57,4 +55,3 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 
 // 페이지 로드시 초기 렌더링
 renderVideos();
-
